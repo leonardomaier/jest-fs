@@ -1,0 +1,35 @@
+{
+  "name": "@leonardomaier/jest-fs",
+  "version": "0.0.1",
+  "description": "Node.js fs module mock for Jest unit testing",
+  "main": "jest-fs.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardomaier/jest-fs.git"
+  },
+  "keywords": [
+    "javascript",
+    "jest",
+    "unit-testing",
+    "node.js",
+    "mock"
+  ],
+  "author": "leonardomaier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardomaier/jest-fs/issues"
+  },
+  "homepage": "https://github.com/leonardomaier/jest-fs#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "jest": "^27.4.7"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
