@@ -46,6 +46,10 @@ fs.existsSync = (file) => {
 
   const filename = path.basename(file);
 
+  if (!files) {
+    return false;
+  }
+
   return !!files.find((currentFile) => currentFile.name === filename);
 };
 
