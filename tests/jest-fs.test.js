@@ -57,4 +57,14 @@ describe('tests mock fs module', () => {
 
     expect(fileExists).toBe(true);
   });
+
+  it('should create a directory', () => {
+    fs.mkdirSync('new-directory');
+
+    fs.writeFileSync('new-directory/file1.txt', 'test file');
+
+    const files = fs.readdirSync('new-directory');
+
+    expect(files.length).toBe(1);
+  });
 });
