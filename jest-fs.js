@@ -65,4 +65,10 @@ fs.renameSync = (oldFile, newFile) => {
   files[fileIndex].name = newFilename;
 };
 
+fs.mkdirSync = (pathDir) => {
+  if (!filesystem[pathDir]) {
+    filesystem[pathDir] = [];
+  }
+};
+
 module.exports = fs;
